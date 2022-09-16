@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Cookie Clicker Game!</title>
+    </head>
+    <style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  box-shadow: 10px 10px 5px lightblue;
+}
+body{
+    
+    background-color: rgb(210, 183, 113);
+}
+
+        </style>
+        <link rel = "stylesheet" href = "js.js"/>
+
+    <body class="cursor">
+<script>
+    var i =0;
+    function cookieClick(){  
+       document.getElementById("numbers").innerHTML=++i;
+       return i;
+    }
+    </script>
+        <div id = "space" , class="center"></div>
+        <div id = "cookie",class="center", onclick="cookieClick()">
+            <img class="center", src="Cookie.png" width="200px"/>
+        </div>
+        <p class="center">Number of Cookies:</p>
+        <div id = "numbers" class="center">0</div>
+    </body>
+</html>
